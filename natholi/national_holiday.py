@@ -25,16 +25,15 @@ def national_holidays(country, api_key):
         national holidays for the country passed as parameter.
     """
 
-    #1 get data from csv and save in dataframe for data processing 
+    #get data from csv and save in dataframe for data processing 
     # at a later stage and save country_list as a list
-    df=pd.read_csv('/Users/usuario/national_holiday_pckg/natholi/natholi/country_list.csv')
+    df=pd.read_csv('~/natholi/country_list.csv')
    
 
     #find corresponding country code for country typed in by user
     for index, row in df.iterrows():
         if (df.at[index, 'country_name'] == country):
             country_code = df.at[index, 'iso-3166']
-            print(country_code)
 
     # api call
     # api documentation
@@ -43,11 +42,9 @@ def national_holidays(country, api_key):
 
     # get json with results
     results_js = json.loads(holidays)
-    print(results_js)
 
     # keep only json data that is of interest
     data2 = results_js['response']['holidays']
-    print(data2)
 
     # convert it into dataframe
     # full dataframe
