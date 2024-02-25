@@ -27,7 +27,7 @@ def national_holidays(country, api_key):
 
     #get data from csv and save in dataframe for data processing 
     # at a later stage and save country_list as a list
-    df=pd.read_csv('~/natholi/country_list.csv')
+    df=pd.read_csv('country_list.csv')
    
 
     #find corresponding country code for country typed in by user
