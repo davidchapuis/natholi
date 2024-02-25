@@ -10,7 +10,11 @@ with open('README.rst') as readme_file:
 with open('HISTORY.rst') as history_file:
     history = history_file.read()
 
-requirements = [ ]
+requirements = [
+    'requests',
+    'pandas',
+    'json,
+]
 
 test_requirements = ['pytest>=3', ]
 
@@ -28,7 +32,7 @@ setup(
         'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
     ],
-    description="A package allowing you to get national holidays for 200+ countries around the world.",
+    description="A package allowing you to get national holidays for 200+ countries around the world in one line of code.",
     install_requires=requirements,
     license="MIT license",
     long_description=readme,
