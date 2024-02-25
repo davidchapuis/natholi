@@ -3,11 +3,9 @@ natholi
 =======
 
 
+
 .. image:: https://img.shields.io/pypi/v/natholi.svg
         :target: https://pypi.python.org/pypi/natholi
-
-<!-- .. image:: https://img.shields.io/travis/davidchapuis/natholi.svg -->
-<!--       :target: https://travis-ci.com/davidchapuis/natholi -->
 
 .. image:: https://readthedocs.org/projects/natholi/badge/?version=latest
         :target: https://natholi.readthedocs.io/en/latest/?version=latest
